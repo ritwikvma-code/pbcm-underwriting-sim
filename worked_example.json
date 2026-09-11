@@ -1,0 +1,213 @@
+{
+  "profile": {
+    "gmv_90d": 15000.0,
+    "gmv_momentum": 0.083,
+    "revenue_cv": 0.21,
+    "return_rate_cohort_pct": 72.0,
+    "dispute_rate": 0.009,
+    "fulfillment_score": 0.97,
+    "tenure_months": 18.0,
+    "category_risk_index": 0.34,
+    "repeat_buyer_rate": 0.18,
+    "platform_concentration": 0.85
+  },
+  "eligibility_score": 0.962,
+  "e_min_at_market_cap": 0.3,
+  "risk_tier": "very_low",
+  "alpha": 0.2386,
+  "max_advance": 3579.0,
+  "factor_rate_expected_loss": 1.1,
+  "factor_rate_linear_rule_for_comparison": 1.16,
+  "total_if_max": 3936.9,
+  "shapley_contributions": [
+    {
+      "feature": "gmv_momentum",
+      "phi": 0.0563
+    },
+    {
+      "feature": "repeat_buyer_rate",
+      "phi": 0.0287
+    },
+    {
+      "feature": "return_rate_cohort_pct",
+      "phi": 0.017
+    },
+    {
+      "feature": "fulfillment_score",
+      "phi": 0.0153
+    },
+    {
+      "feature": "gmv_90d",
+      "phi": 0.0081
+    },
+    {
+      "feature": "revenue_cv",
+      "phi": 0.0077
+    },
+    {
+      "feature": "platform_concentration",
+      "phi": -0.0065
+    },
+    {
+      "feature": "tenure_months",
+      "phi": -0.0051
+    },
+    {
+      "feature": "dispute_rate",
+      "phi": 0.0049
+    },
+    {
+      "feature": "category_risk_index",
+      "phi": 0.0034
+    }
+  ],
+  "draw": {
+    "requested": 1000.0,
+    "factor_rate": 1.1,
+    "total_repayment": 1100.0,
+    "holdback_rate": 0.15,
+    "weekly_settlement": 1153.85,
+    "weekly_holdback": 173.08,
+    "est_repayment_weeks": 7,
+    "disbursement_date": "2025-07-01",
+    "est_payoff_date": "2025-08-18",
+    "third_event": {
+      "settlement_date": "2025-07-21",
+      "gross": 1153.85,
+      "holdback": 173.08,
+      "net_payout": 980.77,
+      "cumulative": 519.24,
+      "outstanding": 580.76,
+      "velocity": 1.0
+    },
+    "schedule": [
+      {
+        "settlement_date": "2025-07-07",
+        "gross": 1153.85,
+        "holdback": 173.08,
+        "net_payout": 980.77,
+        "cumulative": 173.08,
+        "outstanding": 926.92,
+        "velocity": 1.0
+      },
+      {
+        "settlement_date": "2025-07-14",
+        "gross": 1153.85,
+        "holdback": 173.08,
+        "net_payout": 980.77,
+        "cumulative": 346.16,
+        "outstanding": 753.84,
+        "velocity": 1.0
+      },
+      {
+        "settlement_date": "2025-07-21",
+        "gross": 1153.85,
+        "holdback": 173.08,
+        "net_payout": 980.77,
+        "cumulative": 519.24,
+        "outstanding": 580.76,
+        "velocity": 1.0
+      },
+      {
+        "settlement_date": "2025-07-28",
+        "gross": 1153.85,
+        "holdback": 173.08,
+        "net_payout": 980.77,
+        "cumulative": 692.32,
+        "outstanding": 407.68,
+        "velocity": 1.0
+      },
+      {
+        "settlement_date": "2025-08-04",
+        "gross": 1153.85,
+        "holdback": 173.08,
+        "net_payout": 980.77,
+        "cumulative": 865.4,
+        "outstanding": 234.6,
+        "velocity": 1.0
+      },
+      {
+        "settlement_date": "2025-08-11",
+        "gross": 1153.85,
+        "holdback": 173.08,
+        "net_payout": 980.77,
+        "cumulative": 1038.48,
+        "outstanding": 61.52,
+        "velocity": 1.0
+      },
+      {
+        "settlement_date": "2025-08-18",
+        "gross": 1153.85,
+        "holdback": 61.52,
+        "net_payout": 1092.33,
+        "cumulative": 1100.0,
+        "outstanding": 0.0,
+        "velocity": 0.36
+      }
+    ]
+  },
+  "max_draw_est_weeks": 23,
+  "stressed_path_flag": {
+    "week": 7,
+    "decision": "review",
+    "first_watch_week": 5
+  },
+  "stressed_path": [
+    {
+      "week": 1,
+      "gross": 1153.85,
+      "holdback": 173.08,
+      "velocity": 1.0,
+      "outstanding": 926.92
+    },
+    {
+      "week": 2,
+      "gross": 1153.85,
+      "holdback": 173.08,
+      "velocity": 1.0,
+      "outstanding": 753.84
+    },
+    {
+      "week": 3,
+      "gross": 1153.85,
+      "holdback": 173.08,
+      "velocity": 1.0,
+      "outstanding": 580.76
+    },
+    {
+      "week": 4,
+      "gross": 1153.85,
+      "holdback": 173.08,
+      "velocity": 1.0,
+      "outstanding": 407.68
+    },
+    {
+      "week": 5,
+      "gross": 692.31,
+      "holdback": 103.85,
+      "velocity": 0.6,
+      "outstanding": 303.83
+    },
+    {
+      "week": 6,
+      "gross": 692.31,
+      "holdback": 103.85,
+      "velocity": 0.6,
+      "outstanding": 199.98
+    },
+    {
+      "week": 7,
+      "gross": 692.31,
+      "holdback": 103.85,
+      "velocity": 0.6,
+      "outstanding": 96.13
+    },
+    {
+      "week": 8,
+      "gross": 692.31,
+      "holdback": 96.13,
+      "velocity": 0.56,
+      "outstanding": 0.0
+    }
+  ]
+}

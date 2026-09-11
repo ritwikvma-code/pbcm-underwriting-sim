@@ -1,0 +1,6 @@
+# pbcm_simulation.py needs numpy, scikit-learn and matplotlib (figures only).
+# Verified with the versions below; any scikit-learn >= 1.3 should reproduce the
+# reference output up to floating-point noise in the last reported digit.
+numpy==2.4.4
+scikit-learn==1.8.0
+matplotlib==3.10.9

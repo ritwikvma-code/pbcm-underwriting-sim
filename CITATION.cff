@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "PBCM underwriting simulation for embedded merchant cash advances"
+abstract: >-
+  Fully synthetic evaluation suite for the Platform Behavioral Credit Model
+  (PBCM) described in "AI-Driven Underwriting for Embedded Merchant Cash
+  Advances: A Financial Platform Engineering Framework for E-Commerce
+  Marketplaces" (v2). Generates seller populations and repayment paths from a
+  stated data-generating process, compares behavioural-feature underwriting
+  with a bureau-proxy baseline out of time, derives expected-loss pricing,
+  evaluates repayment-velocity monitoring, and reports approval parity. No
+  platform, lender, customer or company data is used or required.
+type: software
+version: 2.0.0
+date-released: "2026-09-11"
+license: MIT
+authors:
+  - given-names: "Ritwik"
+    family-names: "Verma"
+    email: "ritwik.vma@gmail.com"
+    orcid: "https://orcid.org/0009-0007-5883-3733"
+keywords:
+  - merchant cash advance
+  - embedded finance
+  - credit underwriting
+  - gradient boosting
+  - synthetic evaluation
+repository-code: "https://github.com/ritwikvma-code/pbcm-underwriting-sim"
