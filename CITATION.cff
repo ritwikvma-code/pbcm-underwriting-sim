@@ -11,7 +11,7 @@ abstract: >-
   evaluates repayment-velocity monitoring, and reports approval parity. No
   platform, lender, customer or company data is used or required.
 type: software
-version: 2.0.0
+version: 1.0.0
 date-released: "2026-09-11"
 license: MIT
 authors:
