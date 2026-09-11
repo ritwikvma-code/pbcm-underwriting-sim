@@ -26,3 +26,10 @@ keywords:
   - gradient boosting
   - synthetic evaluation
 repository-code: "https://github.com/ritwikvma-code/pbcm-underwriting-sim"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22712491"
+    description: "Archived snapshot of v1.0.0"
+  - type: doi
+    value: "10.5281/zenodo.22712490"
+    description: "Concept DOI, resolves to the latest version"
