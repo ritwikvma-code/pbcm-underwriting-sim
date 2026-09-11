@@ -1,5 +1,7 @@
 # PBCM underwriting simulation — reproducibility package
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22712491.svg)](https://doi.org/10.5281/zenodo.22712491)
+
 Synthetic evaluation suite accompanying *"AI-Driven Underwriting for Embedded
 Merchant Cash Advances: A Financial Platform Engineering Framework for
 E-Commerce Marketplaces"* (v2, September 2026).
@@ -151,6 +153,8 @@ use a seeded generator. Runtime is dominated by the ten-seed sweep.
   reject inference must also handle the incumbent's own selection on
   unobservables.
 
-## Licence
+## Licence and citation
 
-MIT. See `LICENSE`. Cite via `CITATION.cff`.
+MIT. See `LICENSE`.
+
+R. Verma, "PBCM underwriting simulation for embedded merchant cash advances (v1.0.0)," Zenodo, 2026. doi:10.5281/zenodo.22712491 (concept DOI for all versions: 10.5281/zenodo.22712490). Machine-readable metadata in `CITATION.cff`.
