@@ -1,0 +1,7 @@
+model,group,auc_mean,auc_sd
+bureau_proxy,thin,0.55351,0.00785
+bureau_proxy,thick,0.69144,0.01067
+logit_behavioral,thin,0.85239,0.00806
+logit_behavioral,thick,0.85292,0.00557
+pbcm_gbm,thin,0.84442,0.00851
+pbcm_gbm,thick,0.84516,0.00679

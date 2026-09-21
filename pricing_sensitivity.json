@@ -5,162 +5,279 @@
     "target_margin": 0.05,
     "market_cap": 1.35
   },
+  "estimated_inputs": {
+    "ell": [
+      0.005963805403051319,
+      0.01852494801077058,
+      0.015299025045118451,
+      0.018800632770694128,
+      0.022523032451897407
+    ],
+    "tau": [
+      22.517230909366933,
+      26.007957559681696,
+      24.825559701492537,
+      23.49462365591398,
+      19.631799163179917
+    ],
+    "FR": [
+      1.1098406955300875,
+      1.130717510411721,
+      1.1247603820988124,
+      1.1262294045421253,
+      1.1231039605395423
+    ]
+  },
   "rows": [
     {
-      "lgd": 0.09,
-      "term_weeks": 16.25,
-      "fr_star": {
-        "E=0.50": 1.155,
-        "E=0.60": 1.142,
-        "E=0.70": 1.129,
-        "E=0.80": 1.116,
-        "E=0.90": 1.104,
-        "E=1.00": 1.091
+      "unpaid_share_multiple": 1.0,
+      "term_multiple": 1.0,
+      "ell_by_tier": {
+        "very_low": 0.006,
+        "low": 0.0185,
+        "moderate": 0.0153,
+        "elevated": 0.0188,
+        "high": 0.0225
       },
-      "e_min_at_cap": 0.3
+      "tau_by_tier": {
+        "very_low": 22.5,
+        "low": 26.0,
+        "moderate": 24.8,
+        "elevated": 23.5,
+        "high": 19.6
+      },
+      "fr_by_tier": {
+        "very_low": 1.11,
+        "low": 1.131,
+        "moderate": 1.125,
+        "elevated": 1.126,
+        "high": 1.123
+      },
+      "cap": {
+        "binds": false,
+        "lowest_feasible_tier": "high",
+        "e_min": 0.5,
+        "infeasible_tiers": []
+      }
     },
     {
-      "lgd": 0.09,
-      "term_weeks": 20.2,
-      "fr_star": {
-        "E=0.50": 1.163,
-        "E=0.60": 1.149,
-        "E=0.70": 1.136,
-        "E=0.80": 1.124,
-        "E=0.90": 1.111,
-        "E=1.00": 1.099
+      "unpaid_share_multiple": 1.0,
+      "term_multiple": 1.5,
+      "ell_by_tier": {
+        "very_low": 0.006,
+        "low": 0.0185,
+        "moderate": 0.0153,
+        "elevated": 0.0188,
+        "high": 0.0225
       },
-      "e_min_at_cap": 0.3
+      "tau_by_tier": {
+        "very_low": 33.8,
+        "low": 39.0,
+        "moderate": 37.2,
+        "elevated": 35.2,
+        "high": 29.4
+      },
+      "fr_by_tier": {
+        "very_low": 1.131,
+        "low": 1.156,
+        "moderate": 1.148,
+        "elevated": 1.149,
+        "high": 1.142
+      },
+      "cap": {
+        "binds": false,
+        "lowest_feasible_tier": "high",
+        "e_min": 0.5,
+        "infeasible_tiers": []
+      }
     },
     {
-      "lgd": 0.09,
-      "term_weeks": 30.0,
-      "fr_star": {
-        "E=0.50": 1.182,
-        "E=0.60": 1.169,
-        "E=0.70": 1.155,
-        "E=0.80": 1.142,
-        "E=0.90": 1.13,
-        "E=1.00": 1.117
+      "unpaid_share_multiple": 2.0,
+      "term_multiple": 1.0,
+      "ell_by_tier": {
+        "very_low": 0.0119,
+        "low": 0.037,
+        "moderate": 0.0306,
+        "elevated": 0.0376,
+        "high": 0.045
       },
-      "e_min_at_cap": 0.3
+      "tau_by_tier": {
+        "very_low": 22.5,
+        "low": 26.0,
+        "moderate": 24.8,
+        "elevated": 23.5,
+        "high": 19.6
+      },
+      "fr_by_tier": {
+        "very_low": 1.117,
+        "low": 1.152,
+        "moderate": 1.143,
+        "elevated": 1.148,
+        "high": 1.15
+      },
+      "cap": {
+        "binds": false,
+        "lowest_feasible_tier": "high",
+        "e_min": 0.5,
+        "infeasible_tiers": []
+      }
     },
     {
-      "lgd": 0.2,
-      "term_weeks": 16.25,
-      "fr_star": {
-        "E=0.50": 1.243,
-        "E=0.60": 1.209,
-        "E=0.70": 1.178,
-        "E=0.80": 1.147,
-        "E=0.90": 1.119,
-        "E=1.00": 1.091
+      "unpaid_share_multiple": 2.0,
+      "term_multiple": 1.5,
+      "ell_by_tier": {
+        "very_low": 0.0119,
+        "low": 0.037,
+        "moderate": 0.0306,
+        "elevated": 0.0376,
+        "high": 0.045
       },
-      "e_min_at_cap": 0.3
+      "tau_by_tier": {
+        "very_low": 33.8,
+        "low": 39.0,
+        "moderate": 37.2,
+        "elevated": 35.2,
+        "high": 29.4
+      },
+      "fr_by_tier": {
+        "very_low": 1.138,
+        "low": 1.178,
+        "moderate": 1.167,
+        "elevated": 1.171,
+        "high": 1.169
+      },
+      "cap": {
+        "binds": false,
+        "lowest_feasible_tier": "high",
+        "e_min": 0.5,
+        "infeasible_tiers": []
+      }
     },
     {
-      "lgd": 0.2,
-      "term_weeks": 20.2,
-      "fr_star": {
-        "E=0.50": 1.251,
-        "E=0.60": 1.218,
-        "E=0.70": 1.186,
-        "E=0.80": 1.155,
-        "E=0.90": 1.126,
-        "E=1.00": 1.099
+      "unpaid_share_multiple": 4.0,
+      "term_multiple": 1.0,
+      "ell_by_tier": {
+        "very_low": 0.0239,
+        "low": 0.0741,
+        "moderate": 0.0612,
+        "elevated": 0.0752,
+        "high": 0.0901
       },
-      "e_min_at_cap": 0.3
+      "tau_by_tier": {
+        "very_low": 22.5,
+        "low": 26.0,
+        "moderate": 24.8,
+        "elevated": 23.5,
+        "high": 19.6
+      },
+      "fr_by_tier": {
+        "very_low": 1.13,
+        "low": 1.199,
+        "moderate": 1.18,
+        "elevated": 1.195,
+        "high": 1.207
+      },
+      "cap": {
+        "binds": false,
+        "lowest_feasible_tier": "high",
+        "e_min": 0.5,
+        "infeasible_tiers": []
+      }
     },
     {
-      "lgd": 0.2,
-      "term_weeks": 30.0,
-      "fr_star": {
-        "E=0.50": 1.272,
-        "E=0.60": 1.238,
-        "E=0.70": 1.205,
-        "E=0.80": 1.175,
-        "E=0.90": 1.145,
-        "E=1.00": 1.117
+      "unpaid_share_multiple": 4.0,
+      "term_multiple": 1.5,
+      "ell_by_tier": {
+        "very_low": 0.0239,
+        "low": 0.0741,
+        "moderate": 0.0612,
+        "elevated": 0.0752,
+        "high": 0.0901
       },
-      "e_min_at_cap": 0.3
+      "tau_by_tier": {
+        "very_low": 33.8,
+        "low": 39.0,
+        "moderate": 37.2,
+        "elevated": 35.2,
+        "high": 29.4
+      },
+      "fr_by_tier": {
+        "very_low": 1.152,
+        "low": 1.225,
+        "moderate": 1.205,
+        "elevated": 1.219,
+        "high": 1.227
+      },
+      "cap": {
+        "binds": false,
+        "lowest_feasible_tier": "high",
+        "e_min": 0.5,
+        "infeasible_tiers": []
+      }
     },
     {
-      "lgd": 0.35,
-      "term_weeks": 16.25,
-      "fr_star": {
-        "E=0.50": 1.388,
-        "E=0.60": 1.316,
-        "E=0.70": 1.252,
-        "E=0.80": 1.193,
-        "E=0.90": 1.14,
-        "E=1.00": 1.091
+      "unpaid_share_multiple": 8.0,
+      "term_multiple": 1.0,
+      "ell_by_tier": {
+        "very_low": 0.0477,
+        "low": 0.1482,
+        "moderate": 0.1224,
+        "elevated": 0.1504,
+        "high": 0.1802
       },
-      "e_min_at_cap": 0.551
+      "tau_by_tier": {
+        "very_low": 22.5,
+        "low": 26.0,
+        "moderate": 24.8,
+        "elevated": 23.5,
+        "high": 19.6
+      },
+      "fr_by_tier": {
+        "very_low": 1.158,
+        "low": 1.303,
+        "moderate": 1.262,
+        "elevated": 1.301,
+        "high": 1.339
+      },
+      "cap": {
+        "binds": false,
+        "lowest_feasible_tier": "high",
+        "e_min": 0.5,
+        "infeasible_tiers": []
+      }
     },
     {
-      "lgd": 0.35,
-      "term_weeks": 20.2,
-      "fr_star": {
-        "E=0.50": 1.397,
-        "E=0.60": 1.325,
-        "E=0.70": 1.26,
-        "E=0.80": 1.201,
-        "E=0.90": 1.148,
-        "E=1.00": 1.099
+      "unpaid_share_multiple": 8.0,
+      "term_multiple": 1.5,
+      "ell_by_tier": {
+        "very_low": 0.0477,
+        "low": 0.1482,
+        "moderate": 0.1224,
+        "elevated": 0.1504,
+        "high": 0.1802
       },
-      "e_min_at_cap": 0.564
-    },
-    {
-      "lgd": 0.35,
-      "term_weeks": 30.0,
-      "fr_star": {
-        "E=0.50": 1.42,
-        "E=0.60": 1.347,
-        "E=0.70": 1.281,
-        "E=0.80": 1.222,
-        "E=0.90": 1.167,
-        "E=1.00": 1.117
+      "tau_by_tier": {
+        "very_low": 33.8,
+        "low": 39.0,
+        "moderate": 37.2,
+        "elevated": 35.2,
+        "high": 29.4
       },
-      "e_min_at_cap": 0.596
-    },
-    {
-      "lgd": 0.5,
-      "term_weeks": 16.25,
-      "fr_star": {
-        "E=0.50": 1.57,
-        "E=0.60": 1.444,
-        "E=0.70": 1.336,
-        "E=0.80": 1.243,
-        "E=0.90": 1.162,
-        "E=1.00": 1.091
+      "fr_by_tier": {
+        "very_low": 1.181,
+        "low": 1.331,
+        "moderate": 1.289,
+        "elevated": 1.327,
+        "high": 1.362
       },
-      "e_min_at_cap": 0.686
-    },
-    {
-      "lgd": 0.5,
-      "term_weeks": 20.2,
-      "fr_star": {
-        "E=0.50": 1.581,
-        "E=0.60": 1.453,
-        "E=0.70": 1.345,
-        "E=0.80": 1.251,
-        "E=0.90": 1.17,
-        "E=1.00": 1.099
-      },
-      "e_min_at_cap": 0.695
-    },
-    {
-      "lgd": 0.5,
-      "term_weeks": 30.0,
-      "fr_star": {
-        "E=0.50": 1.607,
-        "E=0.60": 1.478,
-        "E=0.70": 1.367,
-        "E=0.80": 1.272,
-        "E=0.90": 1.19,
-        "E=1.00": 1.117
-      },
-      "e_min_at_cap": 0.717
+      "cap": {
+        "binds": true,
+        "lowest_feasible_tier": "elevated",
+        "e_min": 0.6,
+        "infeasible_tiers": [
+          "high"
+        ]
+      }
     }
   ]
 }

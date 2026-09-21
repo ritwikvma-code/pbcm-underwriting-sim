@@ -2,17 +2,19 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "PBCM underwriting simulation for embedded merchant cash advances"
 abstract: >-
-  Fully synthetic evaluation suite for the Platform Behavioral Credit Model
-  (PBCM) described in "AI-Driven Underwriting for Embedded Merchant Cash
-  Advances: A Financial Platform Engineering Framework for E-Commerce
-  Marketplaces" (v2). Generates seller populations and repayment paths from a
-  stated data-generating process, compares behavioural-feature underwriting
-  with a bureau-proxy baseline out of time, derives expected-loss pricing,
-  evaluates repayment-velocity monitoring, and reports approval parity. No
-  platform, lender, customer or company data is used or required.
+  Fully synthetic, policy-consistent evaluation suite for the Platform
+  Behavioral Credit Model (PBCM) described in "Underwriting embedded merchant
+  cash advances from marketplace settlement data: a design blueprint with a
+  policy-consistent synthetic evaluation" (manuscript version 3). Generates
+  seller populations and repayment paths from a stated data-generating process,
+  compares behavioural-feature underwriting with a bureau-proxy baseline on a
+  held-out cohort with a frozen operating policy, estimates tier expected-loss
+  prices under the offered terms, evaluates repayment monitoring rules against
+  baselines, and reports descriptive approval parity. No platform, lender,
+  customer or company data is used or required.
 type: software
-version: 1.0.0
-date-released: "2026-09-11"
+version: 1.1.0
+date-released: "2026-09-12"
 license: MIT
 authors:
   - given-names: "Ritwik"
@@ -29,7 +31,7 @@ repository-code: "https://github.com/ritwikvma-code/pbcm-underwriting-sim"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.22712491"
-    description: "Archived snapshot of v1.0.0"
+    description: "Archived snapshot of v1.0.0 (manuscript version 2)"
   - type: doi
     value: "10.5281/zenodo.22712490"
     description: "Concept DOI, resolves to the latest version"

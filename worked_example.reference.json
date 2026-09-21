@@ -12,14 +12,14 @@
     "platform_concentration": 0.85
   },
   "eligibility_score": 0.962,
-  "e_min_at_market_cap": 0.3,
-  "risk_tier": "very_low",
+  "tier": "very_low",
   "alpha": 0.2386,
   "max_advance": 3579.0,
-  "factor_rate_expected_loss": 1.1,
-  "factor_rate_linear_rule_for_comparison": 1.16,
-  "total_if_max": 3936.9,
-  "shapley_contributions": [
+  "factor_rate_tier": 1.11,
+  "factor_rate_linear_rule": 1.16,
+  "factor_rate_reference_shortcut": 1.103,
+  "total_if_max": 3972.69,
+  "principal_reasons": [
     {
       "feature": "gmv_momentum",
       "phi": 0.0563
@@ -61,10 +61,18 @@
       "phi": 0.0034
     }
   ],
+  "explanation_timing": {
+    "inference_ms_per_call": 11.613694889997532,
+    "shapley_400_permutations_s": 85.99087574800024,
+    "shapley_50_permutations_s": 10.730005223000262,
+    "predict_calls_400": 8000,
+    "note": "single-process prototype measurement; explanations are computed in the nightly feature refresh and cached, not on the eligibility path"
+  },
+  "shapley_50_vs_400_max_abs_diff": 0.008231832710026603,
   "draw": {
     "requested": 1000.0,
-    "factor_rate": 1.1,
-    "total_repayment": 1100.0,
+    "factor_rate": 1.11,
+    "total_repayment": 1110.0,
     "holdback_rate": 0.15,
     "weekly_settlement": 1153.85,
     "weekly_holdback": 173.08,
@@ -77,7 +85,7 @@
       "holdback": 173.08,
       "net_payout": 980.77,
       "cumulative": 519.24,
-      "outstanding": 580.76,
+      "outstanding": 590.76,
       "velocity": 1.0
     },
     "schedule": [
@@ -87,7 +95,7 @@
         "holdback": 173.08,
         "net_payout": 980.77,
         "cumulative": 173.08,
-        "outstanding": 926.92,
+        "outstanding": 936.92,
         "velocity": 1.0
       },
       {
@@ -96,7 +104,7 @@
         "holdback": 173.08,
         "net_payout": 980.77,
         "cumulative": 346.16,
-        "outstanding": 753.84,
+        "outstanding": 763.84,
         "velocity": 1.0
       },
       {
@@ -105,7 +113,7 @@
         "holdback": 173.08,
         "net_payout": 980.77,
         "cumulative": 519.24,
-        "outstanding": 580.76,
+        "outstanding": 590.76,
         "velocity": 1.0
       },
       {
@@ -114,7 +122,7 @@
         "holdback": 173.08,
         "net_payout": 980.77,
         "cumulative": 692.32,
-        "outstanding": 407.68,
+        "outstanding": 417.68,
         "velocity": 1.0
       },
       {
@@ -123,7 +131,7 @@
         "holdback": 173.08,
         "net_payout": 980.77,
         "cumulative": 865.4,
-        "outstanding": 234.6,
+        "outstanding": 244.6,
         "velocity": 1.0
       },
       {
@@ -132,25 +140,56 @@
         "holdback": 173.08,
         "net_payout": 980.77,
         "cumulative": 1038.48,
-        "outstanding": 61.52,
+        "outstanding": 71.52,
         "velocity": 1.0
       },
       {
         "settlement_date": "2025-08-18",
         "gross": 1153.85,
-        "holdback": 61.52,
-        "net_payout": 1092.33,
-        "cumulative": 1100.0,
+        "holdback": 71.52,
+        "net_payout": 1082.33,
+        "cumulative": 1110.0,
         "outstanding": 0.0,
-        "velocity": 0.36
+        "velocity": 0.41
       }
-    ]
+    ],
+    "cash_flow_apr": {
+      "advance": 1000.0,
+      "factor": 1.11,
+      "obligation": 1110.0,
+      "fee": 110.0,
+      "weekly_holdback": 173.08,
+      "schedule": [
+        173.08,
+        173.08,
+        173.08,
+        173.08,
+        173.08,
+        173.08,
+        71.52
+      ],
+      "payoff_week": 7,
+      "continuous_weeks": 6.41,
+      "weekly_irr": 0.028793439520622743,
+      "nominal_annual_irr_52x": 1.4972588550723827,
+      "effective_annual_irr": 3.375882781196479,
+      "fee_annualisation_continuous": 0.8919077477477486,
+      "lender_funding_cost_discrete": 10.77,
+      "lender_funding_cost_continuous": 9.87,
+      "platform_share_of_fee": 19.8,
+      "lender_gross_fee": 90.2,
+      "lender_net_discrete": 79.43
+    }
   },
   "max_draw_est_weeks": 23,
   "stressed_path_flag": {
-    "week": 7,
-    "decision": "review",
-    "first_watch_week": 5
+    "threshold": 0.55,
+    "first_watch_week": 5,
+    "first_review_week": 7,
+    "decision_at_review": "review",
+    "outstanding_at_review": 210.0,
+    "own_deadline_weeks": 35,
+    "own_deadline_for_this_draw_weeks": 10
   },
   "stressed_path": [
     {
@@ -158,55 +197,83 @@
       "gross": 1153.85,
       "holdback": 173.08,
       "velocity": 1.0,
-      "outstanding": 926.92
+      "outstanding": 936.92
     },
     {
       "week": 2,
       "gross": 1153.85,
       "holdback": 173.08,
       "velocity": 1.0,
-      "outstanding": 753.84
+      "outstanding": 763.85
     },
     {
       "week": 3,
       "gross": 1153.85,
       "holdback": 173.08,
       "velocity": 1.0,
-      "outstanding": 580.76
+      "outstanding": 590.77
     },
     {
       "week": 4,
       "gross": 1153.85,
       "holdback": 173.08,
       "velocity": 1.0,
-      "outstanding": 407.68
+      "outstanding": 417.69
     },
     {
       "week": 5,
-      "gross": 692.31,
-      "holdback": 103.85,
-      "velocity": 0.6,
-      "outstanding": 303.83
+      "gross": 461.54,
+      "holdback": 69.23,
+      "velocity": 0.4,
+      "outstanding": 348.46
     },
     {
       "week": 6,
-      "gross": 692.31,
-      "holdback": 103.85,
-      "velocity": 0.6,
-      "outstanding": 199.98
+      "gross": 461.54,
+      "holdback": 69.23,
+      "velocity": 0.4,
+      "outstanding": 279.23
     },
     {
       "week": 7,
-      "gross": 692.31,
-      "holdback": 103.85,
-      "velocity": 0.6,
-      "outstanding": 96.13
+      "gross": 461.54,
+      "holdback": 69.23,
+      "velocity": 0.4,
+      "outstanding": 210.0
     },
     {
       "week": 8,
-      "gross": 692.31,
-      "holdback": 96.13,
-      "velocity": 0.56,
+      "gross": 461.54,
+      "holdback": 69.23,
+      "velocity": 0.4,
+      "outstanding": 140.77
+    },
+    {
+      "week": 9,
+      "gross": 461.54,
+      "holdback": 69.23,
+      "velocity": 0.4,
+      "outstanding": 71.54
+    },
+    {
+      "week": 10,
+      "gross": 461.54,
+      "holdback": 69.23,
+      "velocity": 0.4,
+      "outstanding": 2.3
+    },
+    {
+      "week": 11,
+      "gross": 461.54,
+      "holdback": 69.23,
+      "velocity": 0.4,
+      "outstanding": 0.0
+    },
+    {
+      "week": 12,
+      "gross": 461.54,
+      "holdback": 69.23,
+      "velocity": 0.4,
       "outstanding": 0.0
     }
   ]

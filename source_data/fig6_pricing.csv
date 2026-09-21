@@ -1,0 +1,16 @@
+rule,tier,margin_mean,margin_sd
+tier_expected_loss,very_low,0.04747,0.00136
+tier_expected_loss,low,0.04369,0.00272
+tier_expected_loss,moderate,0.04317,0.00399
+tier_expected_loss,elevated,0.04596,0.00449
+tier_expected_loss,high,0.04607,0.0066
+reference_shortcut,very_low,0.04232,0.00111
+reference_shortcut,low,0.03321,0.00223
+reference_shortcut,moderate,0.03838,0.00318
+reference_shortcut,elevated,0.04917,0.0035
+reference_shortcut,high,0.06668,0.00491
+linear_rule,very_low,0.08761,0.0012
+linear_rule,low,0.09139,0.00259
+linear_rule,moderate,0.10992,0.00347
+linear_rule,elevated,0.13515,0.00473
+linear_rule,high,0.16888,0.00578
