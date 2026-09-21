@@ -164,4 +164,4 @@ and BLAS builds; the paper reports values to three or four significant figures.
 
 MIT. See `LICENSE` and `CITATION.cff`.
 
-R. Verma, "PBCM underwriting simulation for embedded merchant cash advances (v1.1.0)," Zenodo, 2026. Concept DOI 10.5281/zenodo.22712490 (resolves to the latest version); v1.0.0 snapshot 10.5281/zenodo.22712491.
+R. Verma, "PBCM underwriting simulation for embedded merchant cash advances (v1.1.0)," Zenodo, 2026. Version DOI 10.5281/zenodo.22869597 (v1.1.0 snapshot); concept DOI 10.5281/zenodo.22712490 (resolves to the latest version); v1.0.0 snapshot 10.5281/zenodo.22712491.
